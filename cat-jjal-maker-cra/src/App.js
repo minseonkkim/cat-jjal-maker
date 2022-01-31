@@ -77,7 +77,7 @@ function Favorites({ favorites }) {
   }
 
   return (
-    <ul className="favorites">
+    <ul style={{listStyle:none}} className="favorites">
       {favorites.map((cat) => (
         <CatItem img={cat} key={cat} />
       ))}

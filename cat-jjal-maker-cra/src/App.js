@@ -65,7 +65,7 @@ const Form = ({ updateMainCat }) => {
 
 function CatItem(props) {
   return (
-    <li>
+    <li style={{float: "left", margin: "20px"}}>
       <img src={props.img} style={{ width: "150px" }} />
     </li>
   );
@@ -144,15 +144,15 @@ const App = () => {
   const counterTitle = counter === null ? "" : counter + "번째 ";
 
   return (
-    <div>
+    <div id="area">
       <Title>{counterTitle}고양이 가라사대</Title>
       <Form updateMainCat={updateMainCat} />
-      <MainCard
+      <MainCard 
         img={mainCat}
         onHeartClick={handleHeartClick}
         alreadyFavorite={alreadyFavorite}
       />
-      <Favorites favorites={favorites} />
+      <Favorites id="favorites" favorites={favorites} />
     </div>
   );
 };

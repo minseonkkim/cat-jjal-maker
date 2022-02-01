@@ -82,3 +82,9 @@
   font-weight: bold;
   margin: 3px 20px 10px;
 }
+
+#heart {
+  border-style: none;
+  padding: 3px 8px;
+  font-size: 20px;
+}

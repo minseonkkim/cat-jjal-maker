@@ -43,3 +43,42 @@
   justify-content: center;
   align-items: center;
 }
+
+.ipt {
+  width: 190px;
+  height: 23px;
+  border-color: black;
+  border-style: solid;
+  border-width: 2px;
+}
+
+.ipt:focus {
+  outline: none;
+}
+
+.btn {
+  font-weight: bold;
+  height: 30px;
+  vertical-align: middle;
+  display: inline-block;
+  line-height: 1;
+  cursor: pointer;
+  padding: 8px 12px;
+  border-color: black;
+  border-style: solid;
+  border-width: 2px;
+  margin-left: 3px;
+}
+
+.btn:hover {
+  color: white;
+  background-color: rgba(32, 32, 32, 0.836);
+  border-color: rgba(32, 32, 32, 0.836);
+}
+
+#error {
+  color: red;
+  font-size: small;
+  font-weight: bold;
+  margin: 3px 20px 10px;
+}
